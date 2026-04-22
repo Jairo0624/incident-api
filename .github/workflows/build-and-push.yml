@@ -28,8 +28,7 @@ jobs:
               uses: docker/build-push-action@v7
               with:
                 push: true
-                tags:|
+                tags: |
                     ${{ secrets.DOCKER_IMAGE }}:${{ github.sha }}
                     ${{ secrets.DOCKER_IMAGE }}:latest
-
 
